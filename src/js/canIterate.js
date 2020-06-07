@@ -1,6 +1,7 @@
 export default function canIterate(items) {
   try {
     for (const item of items) {
+      // eslint-disable-next-line no-unused-vars
       const value = item;
     }
     return true;
@@ -8,9 +9,3 @@ export default function canIterate(items) {
     return false;
   }
 }
-
-console.log(canIterate(new Map()));
-console.log(canIterate(new Set()));
-console.log(canIterate(null));
-console.log(canIterate(10));
-console.log(canIterate('Netology'));
